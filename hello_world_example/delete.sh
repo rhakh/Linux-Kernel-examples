@@ -1,0 +1,1 @@
+rmmod hello_world
