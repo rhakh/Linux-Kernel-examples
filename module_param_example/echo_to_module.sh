@@ -1,0 +1,1 @@
+echo 42 > /sys/module/module_param/parameters/mp_setting

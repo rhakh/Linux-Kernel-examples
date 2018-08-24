@@ -1,1 +1,1 @@
-insmod module_param.ko setting=3
+insmod module_param.ko mp_setting=3
