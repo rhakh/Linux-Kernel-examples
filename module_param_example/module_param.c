@@ -67,15 +67,15 @@ static int device_open(struct inode *inode, struct file *file)
 // cat /dev/module_param_example_device
 static ssize_t device_read(struct file *filp, char *buffer, size_t length, loff_t *offset)
 {
-   int bytes_read = 0;
+	int bytes_read = 0;
 
-   while (length && *strp)  {
-         put_user(*strp, buffer++);
-		 strp++;
-         length--;
-         bytes_read++;
-   }
-   return (bytes_read);
+	while (length && *strp)  {
+		put_user(*strp, buffer++);
+		strp++;
+		length--;
+		bytes_read++;
+	}
+	return (bytes_read);
 }
 
 /* 
